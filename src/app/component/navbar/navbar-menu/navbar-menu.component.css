@@ -1,0 +1,22 @@
+    .ant-menu-horizontal{
+    background: #006562 !important;
+  }
+
+  .ant-menu-item-selected {
+    background-color: white;
+  }
+  ul .ant-menu-item-selected{
+    background-color: white !important;
+    
+  }
+  .ant-menu-item-selected a {
+    color: #006562 !important;
+  }
+
+  ul .ant-menu-item:hover{
+    background-color: rgb(212, 212, 212) !important;
+    
+  }
+  .ant-menu-item a:hover{
+    color: #006562 !important;
+  }

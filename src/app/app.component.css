@@ -67,7 +67,7 @@ nz-header {
   background: #fff;
   box-shadow: 0 1px 4px rgba(0, 21, 41, .08);
 }
-nz-content {
+.content {
   background: white;
 }
 
@@ -78,10 +78,11 @@ nz-content {
 }
 
 .logo {
-  height: 40px;
-  width: 40px;
-  margin: 10px;
+  height: 64px;
+  width: 64px;
+  margin-right: 25px;
+  margin-left: 10px;
   float: left;
-  background-image: url("https://ng.ant.design/assets/img/logo.svg");
+  background-image: url("/assets/vemo4.png");
   background-size: 100% 100%;
 }

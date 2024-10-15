@@ -1,0 +1,234 @@
+<div class="btn-wrappers" nz-flex nzJustify="center" nzAlign="flex-start">
+
+    <div style="padding:30px;">
+        <div nz-row [nzGutter]="8">
+
+            <div nz-col nzXs="24" nzMd="24" nzLg="24" nzXl="24">
+                <h1>Componentes de ejemplo <a href="https://ng.ant.design/components/overview/en">aqui</a></h1>
+            </div>
+            <div nz-col nzXs="24" nzMd="24" nzLg="24" nzXl="24">
+                <nz-card nzTitle="Menu" [nzHoverable]="true">
+
+                    <ul nz-menu nzMode="horizontal">
+                        <li nz-menu-item nzSelected>
+                            <span nz-icon nzType="mail" nzTheme="outline"></span>
+                            Navigation One
+                        </li>
+                        <li nz-menu-item nzDisabled>
+                            <span nz-icon nzType="appstore" nzTheme="outline"></span>
+                            Navigation Two
+                        </li>
+                        <li nz-submenu nzTitle="Navigation Three - Submenu" nzIcon="setting">
+                            <ul>
+                                <li nz-menu-group nzTitle="Item 1">
+                                    <ul>
+                                        <li nz-menu-item>Option 1</li>
+                                        <li nz-menu-item>Option 2</li>
+                                    </ul>
+                                </li>
+                                <li nz-menu-group nzTitle="Item 2">
+                                    <ul>
+                                        <li nz-menu-item>Option 3</li>
+                                        <li nz-menu-item>Option 4</li>
+                                        <li nz-submenu nzTitle="Sub Menu">
+                                            <ul>
+                                                <li nz-menu-item nzDisabled>Option 5</li>
+                                                <li nz-menu-item>Option 6</li>
+                                            </ul>
+                                        </li>
+                                        <li nz-submenu nzDisabled nzTitle="Disabled Sub Menu">
+                                            <ul>
+                                                <li nz-menu-item>Option 5</li>
+                                                <li nz-menu-item>Option 6</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li nz-menu-item>
+                            <a href="https://ng.ant.design" target="_blank" rel="noopener noreferrer">Navigation Four -
+                                Link</a>
+                        </li>
+                    </ul>
+
+
+
+                </nz-card>
+            </div>
+
+
+
+            <div nz-col nzXs="24" nzMd="24" nzLg="12" nzXl="12">
+                <nz-card nzTitle="Button" [nzHoverable]="true">
+                    <button nz-button [nzSize]="size" nzType="primary">Primary</button>
+                    <button nz-button [nzSize]="size" nzType="default">Default</button>
+                    <button nz-button [nzSize]="size" nzType="dashed">Dashed</button>
+                    <a nz-button [nzSize]="size" nzType="link">Link</a>
+                    <br />
+                    <button nz-button nzType="primary" [nzSize]="size"><span nz-icon nzType="loading"
+                            nzTheme="outline"></span></button>
+                    <button nz-button nzType="primary" [nzSize]="size" nzShape="circle"><span nz-icon nzType="loading"
+                            nzTheme="outline"></span></button>
+                    <button nz-button nzType="primary" [nzSize]="size" nzShape="round"><span nz-icon nzType="loading"
+                            nzTheme="outline"></span></button>
+                    <button nz-button nzType="primary" [nzSize]="size" nzShape="round">
+
+                        Download
+                    </button>
+                    <button nz-button nzType="primary" [nzSize]="size">
+
+                        Download
+                    </button>
+                    <br />
+                    <nz-button-group [nzSize]="size">
+                        <button nz-button nzType="primary">
+                            <span nz-icon nzType="left" nzTheme="outline"></span>
+                            Backward
+                        </button>
+                        <button nz-button nzType="primary">
+                            Forward
+                            <span nz-icon nzType="right" nzTheme="outline"></span>
+                        </button>
+                    </nz-button-group>
+                </nz-card>
+            </div>
+            <div nz-col nzXs="24" nzMd="24" nzLg="12" nzXl="12">
+                <nz-card nzTitle="Breadcrumb" [nzHoverable]="true">
+                    <nz-breadcrumb>
+                        <nz-breadcrumb-item>Home</nz-breadcrumb-item>
+                        <nz-breadcrumb-item>
+                            <a>Application List</a>
+                        </nz-breadcrumb-item>
+                        <nz-breadcrumb-item>An Application</nz-breadcrumb-item>
+                    </nz-breadcrumb>
+
+                    <nz-breadcrumb nzSeparator=">">
+                        <nz-breadcrumb-item>Home</nz-breadcrumb-item>
+                        <nz-breadcrumb-item>
+                            <a>Application List</a>
+                        </nz-breadcrumb-item>
+                        <nz-breadcrumb-item>An Application</nz-breadcrumb-item>
+                    </nz-breadcrumb>
+
+
+                </nz-card>
+            </div>
+
+
+
+
+
+
+            <div nz-col nzXs="24" nzMd="24" nzLg="24" nzXl="12">
+                <nz-card nzTitle="DropDown" [nzHoverable]="true">
+                    <div>
+                        @for (position of listOfPosition; track position) {
+                        <button nz-button nz-dropdown [nzDropdownMenu]="menu" [nzPlacement]="position">{{ position
+                            }}</button>
+                        <nz-dropdown-menu #menu="nzDropdownMenu">
+                            <ul nz-menu>
+                                <li nz-menu-item>1st menu item length</li>
+                                <li nz-menu-item>2nd menu item length</li>
+                                <li nz-menu-item>3rd menu item length</li>
+                            </ul>
+                        </nz-dropdown-menu>
+                        }
+                    </div>
+
+                </nz-card>
+            </div>
+
+
+
+
+            <div nz-col nzXs="24" nzMd="24" nzLg="12" nzXl="12">
+                <nz-card nzTitle="Icon" [nzHoverable]="true">
+                    <span nz-icon nzType="check" nzTheme="outline"></span>
+                    <span nz-icon nzType="close" nzTheme="outline"></span>
+                    <span nz-icon nzType="close-circle" nzTheme="outline"></span>
+                    <span nz-icon nzType="edit" nzTheme="outline"></span>
+                    <span nz-icon nzType="delete" nzTheme="outline"></span>
+                    <span nz-icon nzType="copy" nzTheme="outline"></span>
+                    <span nz-icon nzType="calendar" nzTheme="outline"></span>
+                    <span nz-icon nzType="loading" nzTheme="outline"></span>
+                    <span nz-icon nzType="comment" nzTheme="outline"></span>
+                    <span nz-icon nzType="heart" nzTheme="outline"></span>
+                    <span nz-icon nzType="inbox" nzTheme="outline"></span>
+                    <span nz-icon nzType="like" nzTheme="outline"></span>
+                    <span nz-icon nzType="key" nzTheme="outline"></span>
+                    <span nz-icon style="color: hotpink;">
+                        <svg>
+                            <path
+                                d="M923 283.6c-13.4-31.1-32.6-58.9-56.9-82.8-24.3-23.8-52.5-42.4-84-55.5-32.5-13.5-66.9-20.3-102.4-20.3-49.3 0-97.4 13.5-139.2 39-10 6.1-19.5 12.8-28.5 20.1-9-7.3-18.5-14-28.5-20.1-41.8-25.5-89.9-39-139.2-39-35.5 0-69.9 6.8-102.4 20.3-31.4 13-59.7 31.7-84 55.5-24.4 23.9-43.5 51.7-56.9 82.8-13.9 32.3-21 66.6-21 101.9 0 33.3 6.8 68 20.3 103.3 11.3 29.5 27.5 60.1 48.2 91 32.8 48.9 77.9 99.9 133.9 151.6 92.8 85.7 184.7 144.9 188.6 147.3l23.7 15.2c10.5 6.7 24 6.7 34.5 0l23.7-15.2c3.9-2.5 95.7-61.6 188.6-147.3 56-51.7 101.1-102.7 133.9-151.6 20.7-30.9 37-61.5 48.2-91 13.5-35.3 20.3-70 20.3-103.3 0.1-35.3-7-69.6-20.9-101.9z" />
+                        </svg>
+                    </span>
+                </nz-card>
+            </div>
+
+
+            <div nz-col nzXs="24" nzMd="24" nzLg="24" nzXl="24">
+                <nz-card nzTitle="List" [nzHoverable]="true">
+
+                    <nz-list nzItemLayout="vertical">
+                        @for (item of data; track item) {
+                        <nz-list-item>
+                            <nz-list-item-meta>
+                                <nz-list-item-meta-avatar [nzSrc]="item.avatar"></nz-list-item-meta-avatar>
+                                <nz-list-item-meta-title>
+                                    <a href="{{ item.href }}">{{ item.title }}</a>
+                                </nz-list-item-meta-title>
+                                <nz-list-item-meta-description>
+                                    {{ item.description }}
+                                </nz-list-item-meta-description>
+                            </nz-list-item-meta>
+                            {{ item.content }}
+                            <ul nz-list-item-actions>
+                                <nz-list-item-action>
+                                    <span nz-icon nzType="star-o" style="margin-right: 8px;"></span>
+                                    156
+                                </nz-list-item-action>
+                                <nz-list-item-action>
+                                    <span nz-icon nzType="star-o" style="margin-right: 8px;"></span>
+                                    156
+                                </nz-list-item-action>
+                                <nz-list-item-action>
+                                    <span nz-icon nzType="star-o" style="margin-right: 8px;"></span>
+                                    2
+                                </nz-list-item-action>
+                            </ul>
+                            <nz-list-item-extra>
+                                <img width="272" alt="logo"
+                                    src="https://gw.alipayobjects.com/zos/rmsportal/mqaQswcyDLcXyDKnZfES.png" />
+                            </nz-list-item-extra>
+                        </nz-list-item>
+                        }
+                    </nz-list>
+                </nz-card>
+            </div>
+
+
+
+
+
+
+
+            <div nz-col nzXs="24" nzMd="24" nzLg="24" nzXl="24">
+                <nz-card nzTitle="List" [nzHoverable]="true">
+
+                    <nz-timeline [nzPending]="'Recording...'" [nzReverse]="reverse">
+                        <nz-timeline-item>Create a services site 2015-09-01</nz-timeline-item>
+                        <nz-timeline-item>Solve initial network problems 2015-09-01</nz-timeline-item>
+                        <nz-timeline-item>Technical testing 2015-09-01</nz-timeline-item>
+                    </nz-timeline>
+                    <button nz-button style="margin-top: 16px" nzType="primary" (click)="toggleReverse()">Toggle
+                        Reverse</button>
+                </nz-card>
+            </div>
+
+
+
+        </div>
+    </div>
+
+</div>
